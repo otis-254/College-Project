@@ -1,7 +1,7 @@
  /******* Bootstrap Theming ********/
 
  :root{
---primary: 
+--primary: red; 
 --secondary: #F2F1F8;
 --light: #FFFFFF;
 --dark: #44425A;
@@ -60,13 +60,13 @@ a {
     width: 25px;
     height: 25px;
     margin: 5px 0;
-    background: $dark;
-    border: 5px solid $light;
+    background: dark;
+    border: 5px solid light;
     border-radius: 25px;
 }
 
 .carousel-indicators .active {
-    background: $primary;
+    background: primary;
 }
 
 @media (max-width: 991.98px) {
@@ -147,7 +147,7 @@ a {
     width: 15px;
     height: 15px;
     border-radius: 15px;
-    background: $primary;
+    background: primary;
 }
 
 .testimonial-carousel .owl-dot::after {
@@ -157,15 +157,19 @@ a {
     right: -5px;
     bottom: -5px;
     left: -5px;
-    border: 2px solid $primary;
+    border: 2px solid primary;
     border-radius: 20px;
 }
 
 .testimonial-carousel .owl-dot.active {
-    background: $dark;
+    background: dark;
 }
 
-
+.contact-form .help-block ul {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+}
 
  
  
