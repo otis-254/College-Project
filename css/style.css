@@ -2,7 +2,7 @@
 
  :root{
 --primary: #FF6600; 
---secondary: #F2F1F8;
+--secondary: #f2f1f891;
 --light: #FFFFFF;
 --dark: #44425A;
 --body : #888; 
@@ -60,7 +60,18 @@ a {
     font-weight: 600;
  }
 
-  
+  .card-efect{
+    box-shadow: var(--box-shadow);
+    background-color: #fff;
+    padding: 25px;
+transition: all 0.35s ease;
+
+  }
+
+  .card-efect:hover{
+    box-shadow: none;
+    transform: translateY(5px);
+  }
 
 
 .cat-item img {
