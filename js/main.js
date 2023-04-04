@@ -19,18 +19,18 @@
     });
     
     
+ 
+
     // Back to top button
-    $(window).scroll(function () {
-        if ($(this).scrollTop() > 100) {
-            $('.back-to-top').fadeIn('slow');
-        } else {
-            $('.back-to-top').fadeOut('slow');
-        }
-    });
-    $('.back-to-top').click(function () {
-        $('html, body').animate({scrollTop: 0}, 1500, 'easeInOutExpo');
-        return false;
-    });
+     const toTop =document.querySelector(".to-top");
+     window.addEventListener("scroll" , () => {
+if (window.pageYOffset> 100) {
+toTop.classList.add("active");
+} else{
+    toTop.classList.remove("active");
+}
+     })
+
 
 
     // Testimonials carousel

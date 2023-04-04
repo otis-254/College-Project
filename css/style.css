@@ -34,8 +34,7 @@ h6,
  
 
 a {
-    color: var(-dark);
-    text-decoration: none;
+     
     }
   
 .hero {
@@ -120,6 +119,34 @@ transition: all 0.35s ease;
     transition: .5s;
     z-index: 1;
     opacity: 0;
+}
+
+
+.to-top{
+    background-color: var(--primary);
+    position: fixed;
+    bottom: 16px;
+    right: 32px;
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 32px;
+    color: white;
+    text-decoration: none;
+    opacity: 0;
+    pointer-events: none;
+    transition: all .6s;
+
+}
+
+.to-top.active {
+    bottom: 32px;
+    pointer-events: auto;
+    opacity: 1;
+    scroll-behavior: smooth;
 }
 
 .team-item:hover .team-social {
