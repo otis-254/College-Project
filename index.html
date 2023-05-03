@@ -27,6 +27,18 @@
 
     <link rel="stylesheet" href="jquery.flipster.min.css">
     <link rel="stylesheet" href="css/style.css">
+
+    <script src="index.js"></script>
+
+    <script
+      type="text/javascript"
+      src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js">
+</script>
+    <script type="text/javascript">
+      (function () {
+        emailjs.init("12pmQhGYvWzg9n1Z0");
+      })();
+    </script>    
 </head>
 
 <body>
@@ -84,8 +96,8 @@
                 Courses Shortcut
             </a>
 
-            <ul class="dropdown-menu me-6 aria-labelledby=" dropdownMenuLink">
-                <a href="MS" class="nav-link" data-toggle="dropdown">Microsof Office Professional</a>
+            <ul class="dropdown-menu me-6 aria-labelledby=" dropdownMenuLink>
+                <a href="http://127.0.0.1:5500/courses.html" class="nav-link" data-toggle="dropdown">Microsof Office Professional</a>
                 <a href="#courses.html" class=" id=#courses nav-item nav-link">Graphic Design Profession</a>
                 <a href="courses.html" class="nav-item nav-link">Financial Application</a>
                 <a class="nav-item nav-link">Programming Specialist</a>
@@ -170,7 +182,7 @@
                             culture that encourages hardwork, self-resillience and integrity!
                             Do you still want to join us?
                         </p>
-                        <a href="mailto:someone@example.com"
+                        <a href="mailto:rotanacollege.com"
                             class="btn btn-primary py-md-2 px-md-4 font-weight-semi-bold mt-2">Link Up Now!</a>
                     </div>
                 </div>
@@ -191,7 +203,7 @@
                     <div class="col-lg-3 col-md-6 mb-4">
                         <div class="cat-item position-relative overflow-hidden rounded mb-2">
                             <img class="img-fluid" src="img/cat-1.jpg" alt="">
-                            <a class="cat-overlay text-white text-decoration-none" href="">
+                            <a class="cat-overlay text-white text-decoration-none" >
                                 <h4 class="text-white font-weight-medium text-center">Microsoft Office Profession
                                 </h4>
                                 <span>10 Courses</span>
@@ -201,7 +213,7 @@
                     <div class="col-lg-3 col-md-6 mb-4">
                         <div class="cat-item position-relative overflow-hidden rounded mb-2">
                             <img class="img-fluid" src="img/cat-2.jpg" alt="">
-                            <a class="cat-overlay text-white text-decoration-none" href="">
+                            <a class="cat-overlay text-white text-decoration-none" >
                                 <h4 class="text-white font-weight-medium text-center">Graphic Design Profession
                                 </h4>
                                 <span>4 Courses</span>
@@ -211,7 +223,7 @@
                     <div class="col-lg-3 col-md-6 mb-4">
                         <div class="cat-item position-relative overflow-hidden rounded mb-2">
                             <img class="img-fluid" src="img/cat-3.jpg" alt="">
-                            <a class="cat-overlay text-white text-decoration-none" href="">
+                            <a class="cat-overlay text-white text-decoration-none" >
                                 <h4 class="text-white font-weight-medium text-center">Financial Application
                                 </h4>
                                 <span>2 Courses</span>
@@ -221,7 +233,7 @@
                     <div class="col-lg-3 col-md-6 mb-4">
                         <div class="cat-item position-relative overflow-hidden rounded mb-2">
                             <img class="img-fluid" src="img/cat-4.jpg" alt="">
-                            <a class="cat-overlay text-white text-decoration-none" href="">
+                            <a class="cat-overlay text-white text-decoration-none" >
                                 <h4 class="text-white font-weight-medium text-center">Programming Specialist
                                 </h4>
                                 <span>4 Courses</span>
@@ -231,7 +243,7 @@
                     <div class="col-lg-3 col-md-6 mb-4">
                         <div class="cat-item position-relative overflow-hidden rounded mb-2">
                             <img class="img-fluid" src="img/cat-5.jpg" alt="">
-                            <a class="cat-overlay text-white text-decoration-none" href="">
+                            <a class="cat-overlay text-white text-decoration-none" >
                                 <h4 class="text-white font-weight-medium text-center">Digital Support Certification
                                 </h4>
                                 <span>4 Courses</span>
@@ -241,7 +253,7 @@
                     <div class="col-lg-3 col-md-6 mb-4">
                         <div class="cat-item position-relative overflow-hidden rounded mb-2">
                             <img class="img-fluid" src="img/cat-6.jpg" alt="">
-                            <a class="cat-overlay text-white text-decoration-none" href="">
+                            <a class="cat-overlay text-white text-decoration-none">
                                 <h4 class="text-white font-weight-medium text-center">Advanced Web Design
                                 </h4>
                                 <span>6 Courses</span>
@@ -251,7 +263,7 @@
                     <div class="col-lg-3 col-md-6 mb-4">
                         <div class="cat-item position-relative overflow-hidden rounded mb-2">
                             <img class="img-fluid" src="img/cat-7.jpg" alt="">
-                            <a class="cat-overlay text-white text-decoration-none" href="">
+                            <a class="cat-overlay text-white text-decoration-none">
                                 <h4 class="text-white font-weight-medium text-center">Cambridge English
                                 </h4>
                                 <span>6 Courses</span>
@@ -261,7 +273,7 @@
                     <div class="col-lg-3 col-md-6 mb-4">
                         <div class="cat-item position-relative overflow-hidden rounded mb-2">
                             <img class="img-fluid" src="img/cat-8.jpg" alt="">
-                            <a class="cat-overlay text-white text-decoration-none" href="">
+                            <a class="cat-overlay text-white text-decoration-none"  >
                                 <h4 class="text-white font-weight-medium text-center">Professional Courses
                                 </h4>
                                 <span>6 Courses</span>
@@ -271,197 +283,24 @@
                 </div>
             </div>
         </div>
+        <!-- Category Start -->
+    <div class="container-fluid py-2">
+        <div class="container pt-2 pb-1">
+            <div class="text-center mb-5">
+        <a href="/courses.html" target="_blank"
+        class="btn btn-primary py-md-2 px-md-4 font-weight-semi-bold m-0">Explore More
+        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+            class="bi bi-arrow-right-circle-fill" viewBox="0 0 16 16">
+            <path
+                d="M8 0a8 8 0 1 1 0 16A8 8 0 0 1 8 0zM4.5 7.5a.5.5 0 0 0 0 1h5.793l-2.147 2.146a.5.5 0 0 0 .708.708l3-3a.5.5 0 0 0 0-.708l-3-3a.5.5 0 1 0-.708.708L10.293 7.5H4.5z" />
+        </svg>
+    </a>
+    </div>
+        </div>
+        </div>
+        <!-- Courses Start -->
     </section>
-
-    <!-- Category Start -->
-
-
-    <!-- Courses Start -->
-    <section id="courses">
-        <div class="container-fluid py-5">
-            <div class="container py-5 ">
-                <div class="text-center mb-5">
-                    <h5 class="text-primary text-uppercase mb-3" style="letter-spacing: 5px;">Courses</h5>
-                    <h1 class="text-dark">Our Popular Courses</h1>
-                </div>
-                <div class="row">
-                    <div class="col-lg-4 col-md-6 mb-4">
-                        <div class="rounded overflow-hidden mb-2">
-                            <div class="iconbox ">
-                                <img class="img-fluid" src="img/windows-4jObbWz5vfI-unsplash.jpg" alt="">
-                                <div class=" bg-light  p-4 shadow-sm p-3 mb-5">
-
-                                    <h5 class="h5 text-primary mr-2">Microsoft Office Profession</h5>
-                                    <ul class="list-inline text-primary m-0 col-md-12">
-                                        <li class="py-2 text-dark  "><i
-                                                class="fa fa-check text-primary me-2 mr-3"></i>Concepts of IT</li>
-                                        <li class="py-2 text-dark "><i class="fa fa-check text-primary me-2 mr-3"></i>Ms
-                                            Windows</li>
-                                        <li class="py-2 text-dark"><i class="fa fa-check text-primary me-2 mr-3"></i>Ms
-                                            Word</li>
-                                        <li class="py-2 text-dark"><i class="fa fa-check text-primary me-2 mr-3"></i>Ms
-                                            Excel</li>
-                                        <li class="py-2 text-dark"><i class="fa fa-check text-primary me-2 mr-3"></i>Ms
-                                            Access</li>
-                                    </ul>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-4 col-md-6 mb-4">
-                        <div class="rounded overflow-hidden mb-2">
-                            <img class="img-fluid" src="img/course-2.jpg" alt="">
-                            <div class="bg-light p-4  shadow-sm p-3 mb-5">
-                                <h5 class="h5 text-primary">Graphic Design Profession</h5>
-                                <ul class="list-inline text-primary m-0 col-md-12">
-                                    <li class="py-2 text-dark"><i class="fa fa-check text-primary me-2 mr-3"></i>Adobe
-                                        Photoshop</li>
-                                    <li class="py-2 text-dark"><i class="fa fa-check text-primary me-2 mr-3"></i>Adobe
-                                        inDesign</li>
-                                    <li class="py-2 text-dark"><i class="fa fa-check text-primary me-2 mr-3"></i>Adobe
-                                        Illustrator</li>
-                                    <li class="py-2 text-dark"><i class="fa fa-check text-primary me-2 mr-3"></i>Corel
-                                        Draw</li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-4 col-md-6 mb-4">
-                        <div class="rounded overflow-hidden mb-2">
-                            <img class="img-fluid" src="img/course-3.jpg" alt="">
-                            <div class="bg-light p-4">
-                                <h5 class="h5 text-primary"> Financial Application</h5>
-                                <ul class="list-inline text-primary m-0 col-md-12">
-                                    <li class="py-2 text-dark"><i class="fa fa-check text-primary  me-2 mr-3"></i>Quick
-                                        Books</li>
-
-                                    <ul class="list-inline text-primary m-0 col-md-12">
-                                        <li class="py-2 text-dark"><i class="fa fa-check text-primary  me-2 mr-3"></i>
-                                            Peachtree</li>
-                                        <li class="py-2 text-dark"><i
-                                                class="fa fa-check text-primary  me-2 mr-3"></i>Pastel</li>
-                                        <ul class="list-inline text-primary m-0 col-md-12">
-                                            <li class="py-2 text-dark"><i
-                                                    class="fa fa-check text-primary  me-2 mr-3"></i> SAGE</li>
-                                            <li class="py-2 text-dark"><i
-                                                    class="fa fa-check text-primary  me-2 mr-3"></i>Daceasy</li>
-                                        </ul>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-4 col-md-6 mb-4">
-                        <div class="rounded overflow-hidden mb-2">
-                            <img class="img-fluid" src="img/course-4.jpg" alt="">
-                            <div class="bg-light p-4">
-                                <h5 class="h5 text-primary">Programming Specialist</h5>
-                                <ul class="list-inline text-primary m-0 col-md-12">
-                                    <li class="py-2 text-dark"><i class="fa fa-check text-primary me-2 mr-3"></i> Visual
-                                        Basic</li>
-                                    <li class="py-2 text-dark"><i class="fa fa-check text-primary me-2 mr-3"></i>Java
-                                    </li>
-                                    <li class="py-2 text-dark"><i class="fa fa-check text-primary me-2 mr-3"></i> C++
-                                    </li>
-                                    <li class="py-2 text-dark"><i class="fa fa-check text-primary me-2 mr-3"></i>Python
-                                    </li>
-
-                                </ul>
-                            </div>
-
-                        </div>
-                    </div>
-                    <div class="col-lg-4 col-md-6 mb-4">
-                        <div class="rounded overflow-hidden mb-2">
-                            <img class="img-fluid" src="img/andrew-neel-cckf4TsHAuw-unsplash.jpg" alt="">
-                            <div class="bg-light p-4">
-                                <h5 class="h5 text-primary">Digital Support Certification</h5>
-                                <ul class="list-inline text-primary m-0 col-md-12">
-                                    <li class="py-2 text-dark"><i class="fa fa-check text-primary me-2 mr-3"></i>A+</li>
-                                    <li class="py-2 text-dark"><i class="fa fa-check text-primary me-2 mr-3"></i>CCNA
-                                    </li>
-                                    <li class="py-2 text-dark"><i class="fa fa-check text-primary me-2 mr-3"></i>N+</li>
-                                    <li class="py-2 text-dark"><i class="fa fa-check text-primary me-2 mr-3"></i>CCNP
-                                    </li>
-
-                                </ul>
-                            </div>
-
-                        </div>
-                    </div>
-                    <div class="col-lg-4 col-md-6 mb-4">
-                        <div class="rounded overflow-hidden mb-2">
-                            <img class="img-fluid" src="img/clement-helardot-95YRwf6CNw8-unsplash.jpg" alt="">
-                            <div class="bg-light p-4">
-                                <h5 class="h5 text-primary"> Advanced Web Design</h5>
-                                <ul class="list-inline text-primary m-0 col-md-12">
-                                    <li class="py-2 text-dark"><i class="fa fa-check text-primary  me-2 mr-3"></i>HTML
-                                    </li>
-                                    <li class="py-2 text-dark"><i
-                                            class="fa fa-check text-primary  me-2 mr-3"></i>Dreamweaver</li>
-                                    <li class="py-2 text-dark"><i class="fa fa-check text-primary  me-2 mr-3"></i>Java
-                                        Script</li>
-                                    <li class="py-2 text-dark"><i class="fa fa-check text-primary  me-2 mr-3"></i>PHP
-                                    </li>
-                                    <li class="py-2 text-dark"><i class="fa fa-check text-primary  me-2 mr-3"></i>MySQL
-                                    </li>
-                                    <li class="py-2 text-dark"><i class="fa fa-check text-primary  me-2 mr-3"></i>CSS
-                                    </li>
-                                </ul>
-                            </div>
-
-                        </div>
-                    </div>
-                    <div class="col-lg-4 col-md-6 mb-4">
-                        <div class="rounded overflow-hidden mb-2">
-                            <img class="img-fluid" src="img/course-6.jpg" alt="">
-                            <div class="bg-light p-4">
-                                <h5 class="h5 text-primary">Cambridge English</h5>
-                                <ul class="list-inline text-primary m-0 col-md-12">
-                                    <li class="py-2 text-dark"><i class="fa fa-check text-primary me-2 mr-3"></i>TOEFL
-                                    </li>
-                                    <li class="py-2 text-dark"><i class="fa fa-check text-primary me-2 mr-3"></i>General
-                                        English</li>
-                                    <li class="py-2 text-dark"><i class="fa fa-check text-primary me-2 mr-3"></i>IELTS
-                                    </li>
-                                    <li class="py-2 text-dark"><i
-                                            class="fa fa-check text-primary me-2 mr-3"></i>Professional Spoken
-                                        English</li>
-                                    <li class="py-2 text-dark"><i class="fa fa-check text-primary  me-2 mr-3"></i>Public
-                                        Speaking</li>
-
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-4 col-md-6 mb-4">
-                        <div class="rounded overflow-hidden mb-2">
-                            <img class="img-fluid" src="img/nick-morrison-FHnnjk1Yj7Y-unsplash.jpg" alt="">
-                            <div class="bg-light p-4">
-                                <h5 class="h5 text-primary">Professional Courses</h5>
-                                <ul class="list-inline text-primary m-0 col-md-12">
-                                    <li class="py-2 text-dark"><i class="fa fa-check text-primary  me-2 mr-3"></i>Office
-                                        Management
-                                        Skills
-                                    </li>
-                                    <li class="py-2 text-dark"><i
-                                            class="fa fa-check text-primary  me-2 mr-3"></i>Business Communication
-                                        Skills</li>
-                                    <li class="py-2 text-dark"><i
-                                            class="fa fa-check text-primary  me-2 mr-3"></i>Business Accounting
-                                    </li>
-                                    <li class="py-2 text-dark"><i
-                                            class="fa fa-check text-primary  me-2 mr-3"></i>Customer Service</li>
-
-                                </ul>
-                            </div>
-
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        </div>
-        </div>
-        </div>
+     
         <!-- Courses End -->
 
         <!-- Team Start -->
@@ -610,31 +449,55 @@
                                     <h1 class="m-0">Contact Us Now</h1>
                                 </div>
                                 <div class="card-body rounded-bottom bg-primary p-5">
-                                    <form>
-                                        <div class="form-group">
-                                            <input type="text" class="form-control border-0 p-4" placeholder="Your name"
-                                                required="required" />
-                                        </div>
-                                        <div class="form-group">
-                                            <input type="email" class="form-control border-0 p-4"
-                                                placeholder="Your email" required="required" />
-                                        </div>
-                                        <div class="form-group">
-                                            <input type="phone" class="form-control border-0 p-4" placeholder="Phone No"
-                                                required="required" />
-                                        </div>
-                                        <div>
-                                            <div class="control-group">
-                                                <textarea class="form-control border-0 py-3 px-4" rows="5" id="message"
-                                                    placeholder="Message" required="required"
-                                                    data-validation-required-message="Please enter your message"></textarea>
-                                                <p class="help-block text-danger"></p>
-                                            </div>
-                                            <div class="text-center">
-                                                <button class="btn btn-dark btn-block border-0 py-3"
-                                                    type="submit">Submit</button>
-                                            </div>
-
+                                    <form  class="contact_form" action="#">
+                                                                                   
+                                              <div class="border-0 px-md-4">
+                                                <div class="form-group">
+                                                 
+                                                  <input
+                                                    type="text"
+                                                    class="form-control border-0 p-4"
+                                                    id="name"
+                                                    placeholder="Enter name"
+                                                  />
+                                                </div>
+                                                <div class="form-group">
+                                                   
+                                                  <input
+                                                    type="email"
+                                                    class="form-control border-0 p-4"
+                                                    id="email"
+                                                    placeholder="Enter email"
+                                                  />
+                                                  <br>
+                                                  <div class="form-group">
+                                                     
+                                                    <input
+                                                      type="phone"
+                                                      class="form-control border-0 p-4"
+                                                      id="phone"
+                                                      placeholder="Enter Phone No"
+                                                    />
+                                               </div>
+                                               <div class="form-group">
+                                                 
+                                                <input
+                                                  type="location"
+                                                  class="form-control border-0 p-4"
+                                                  id="location"
+                                                  placeholder="Location"
+                                                />
+                                           </div>
+                                                <div class="form-group">
+                                                   
+                                                  <textarea class="form-control border-0 py-3 px-4" rows="5" id="message"
+                                                  placeholder="Message" required="required"
+                                                  data-validation-required-message="Please enter your message">
+                                                  </textarea>
+                                                </div>
+                                                <button class="btn btn-dark btn-block border-0 py-3" onclick="sendMail()">Submit</button>
+                                              </div>
+                                           
                                     </form>
                                 </div>
                             </div>
@@ -643,6 +506,8 @@
                 </div>
             </div>
         </section>
+        
+        
         <!-- Registration End -->
         <br>
         <br>
@@ -706,27 +571,13 @@
                     </div>
                 </div>
                 <div class="col-lg-5 col-md-12 mb-2">
-                    <h5 class="text-primary text-uppercase mb-4" style="letter-spacing: 5px;">Our Courses</h5>
+                    <h5 class="text-primary text-uppercase mb-4" style="letter-spacing: 5px;">Quick Links</h5>
                     <div class="d-flex flex-column justify-content-start">
-                        <a class="text-white mb-2"><i class="fa fa-angle-right me-2"></i>Microsof
-                            Office
-                            Professional </a>
-                        <a class="text-white mb-2 hover"><i class="fa fa-angle-right me-2"></i>Graphic Design
-                            Profession</a>
-                        <a class="text-white mb-2"><i class="fa fa-angle-right me-2"></i>Financial
-                            Application</a>
-                        <a class="text-white mb-2"><i class="fa fa-angle-right me-2"></i>Programming
-                            Specialist</a>
-                        <a class="text-white"><i class="fa fa-angle-right me-2"></i>Digital Support
-                            Certification</a>
-                        <a class="text-white mb-2"><i class="fa fa-angle-right me-2"></i>Advanced Web
-                            Design</a>
-                        <a class="text-white"><i class="fa fa-angle-right me-2"></i>Cambridge
-                            English</a>
-                        <a class="text-white"><i class="fa fa-angle-right me-2"></i>Professional
-                            Courses</a>
-                        <a class="text-white"><i class="fa fa-angle-right me-2"></i>Professional
-                            Courses</a>
+                        <a href="index.html" class="text-white mb-2"><i class="fa fa-angle-right me-2"></i>Home </a>
+                        <a href="#about" class="text-white mb-2 hover"><i class="fa fa-angle-right me-2"></i>About</a>
+                        <a href="courses.html" class="text-white mb-2"><i class="fa fa-angle-right me-2"></i>Courses</a>
+                        <a href="#teachers" class="text-white mb-2"><i class="fa fa-angle-right me-2"></i>Our Teachers</a>
+                        <a href="#contact" class="text-white"><i class="fa fa-angle-right me-2"></i>Customer Support Desk</a>
                     </div>
                     </form>
                 </div>
@@ -798,9 +649,8 @@
                     spacing: -0.6,
                 });
             </script>
+ 
 
-            
-          
 </body>
 
 </html>
